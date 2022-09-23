@@ -1,3 +1,5 @@
-# primeirog_3t
-Aluna: Gabrielly de Moura Ribeiro 
-Número: 39
+# Terceiro Trimestre
+
+## identificação
+Aluna: Gabrielly de Moura Ribeiro número: 39
+## conteudo - HTML - CSS - JavaScript
