@@ -1,14 +1,14 @@
-function mostraLista(){
-    document.write("Tamanho da lista: " + lista.length + "<br>")
-    for(let i = 0; i < lista.length; i++){
-        document.write ("Planeta " + lista[i] + "<br>");
-    }
+function total() {
+  let c = document.getElementById("capital").value;
+  let j = document.getElementById("juros").value;
+  let t = document.getElementById("meses").value;
+  letm = 0;
+  for(let i = 1; i <= t; i ++){
+     m = c * (1 + (j/100)); 
+  document.write("Valor no mês " + i + " = " + m + "<br>");
+     c = m;  
+  }
+ 
+  document.write("Montante: " + m);
 }
-function repete(){
-    for(let i = 1; i <= 10; i++){
-        document.write("Tabuada do " + i + "<br>");
-        for(let j = 1; j <= 10; j++){
-            document.write(i +" x  " + j + " = " +(i*j)+"<br>");
-        }
-    }
-} 
+ 
