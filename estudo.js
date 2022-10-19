@@ -1,4 +1,3 @@
-
 function total(){
     let c = document.getElementById("valor").value;
     let j = document.getElementById("juros").value;
