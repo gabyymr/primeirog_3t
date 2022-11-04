@@ -1,17 +1,23 @@
 .calc {
-    background: rgb(48, 25, 109);
+    background: rgb(31, 12, 82);
     color: rgb(81, 223, 81);
     width: 200px;
     padding: 10px;
     border-radius: 15px;
     text-align: center;
-}
+    box-shadow: 5px 5px rgb(36, 34, 34);
+} 
 .calc input {
     background: rgb(158, 158, 206);
     color: rgb(12, 11, 11);
     border-radius: 5px;
     padding: 5px;
     margin-top: 5px;
+
+}
+.calc input:focus{
+    background: indigo;
+    color: lightcyan;
 }
 #spTotal {
     background: rgba(8, 8, 59, 0.514);
@@ -32,3 +38,13 @@
     color: rgb(190, 212, 210);
     cursor: pointer;
 }
+ #spLista{
+     text-align: start;
+border-style: dashed;
+border-color: rgb(25, 63, 63);
+border-width: 1px;
+border-radius: 4px;
+background: rgb(58, 55, 52);
+color: rgb(30, 88, 28);
+margin-top: 10px;
+ }
