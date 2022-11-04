@@ -1,4 +1,6 @@
-
+function moeda(atual) {
+  return atual.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+}
 function total() {
   let c = document.getElementById("valor").value;
   let j = document.getElementById("juros").value;
@@ -22,17 +24,17 @@ function total() {
     document.getElementById("meses").focus();
     return
   }
-
-
-
+  let m = 0;
+  let texto = "";
   for (let i = 1; i <= t; i++) {
-    r = c * (1 + (j / 100));
+    m = c * (1 + (j / 100));
+    texto += i + ": " + moeda(m) + "<br>";
     document.write("Mês " + i + " valor: " + r + "<br>");
-    c = r;
-  }
-  //document.write("Resultado: " + r);
+    c = m;
+  //document.write("Mês " + i + " = " + m + "<br>" )
 }
-document.getElementById("Total").innerHTML = m;
+document.getElementById("ListaMes").innerHTML = texto
+document.getElementById("Total").innerHTML = moeda(m);
 //document.write("Montante: " + m);
 
 function adicao() {
@@ -70,7 +72,7 @@ function porcentagem() {
   let r = Number(val1) * Number(p);
   document.getElementById("resultado").innerHTML = r;
 }
-
+}
 
 
 
